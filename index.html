@@ -42,7 +42,8 @@
 
         @media (max-width: 768px) {
             .presentation-container {
-                height: 80vh;
+                height: 100vh;
+                height: 100dvh; /* Dynamic viewport height for mobile browsers */
                 min-height: unset;
                 border-radius: 0;
                 max-width: 100%;
@@ -58,13 +59,13 @@
 
         @media (max-width: 768px) {
             .slide {
-                padding: 20px 15px;
+                padding: 20px 15px 80px 15px; /* Bottom padding for fixed navigation */
             }
         }
 
         @media (max-width: 480px) {
             .slide {
-                padding: 15px 10px;
+                padding: 15px 10px 75px 10px; /* Bottom padding for fixed navigation */
             }
         }
 
@@ -608,11 +609,14 @@
             .navigation {
                 padding: 15px 20px;
                 gap: 15px;
-                position: sticky;
+                position: fixed;
                 bottom: 0;
+                left: 0;
+                right: 0;
                 background: rgba(248, 249, 250, 0.98);
                 backdrop-filter: blur(10px);
                 box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                z-index: 100;
             }
         }
 
