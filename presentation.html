@@ -28,12 +28,17 @@
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.2);
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            min-height: 700px;
         }
 
         .slide {
             padding: 60px;
-            min-height: 600px;
+            flex: 1;
             display: none;
+            overflow-y: auto;
         }
 
         .slide.active {
@@ -326,6 +331,8 @@
             padding: 30px;
             gap: 20px;
             background: #f8f9fa;
+            flex-shrink: 0;
+            border-top: 2px solid #e9ecef;
         }
 
         .nav-btn {
@@ -395,7 +402,7 @@
                 </div>
                 <div class="problem-card">
                     <h3>🏃 運動不足</h3>
-                    <p>引退後、定期的な運動機会が減少し、健康維持が課題となっているOBが多数います。</p>
+                    <p>引退後、定期的な運動機会が減少し、健康維持が課題となる人がいます。</p>
                 </div>
                 <div class="problem-card">
                     <h3>⚽ フットサルからの疎遠</h3>
@@ -413,18 +420,18 @@
             <h2>提案するソリューション</h2>
             <div class="solution-list">
                 <div class="solution-item">
-                    <h3>📅 定期開催</h3>
+                    <h3>📅 不定期開催</h3>
                     <p>月1回程度、土曜日に大岡山体育館で個サルを開催。<br>
-                    公式戦でA・Bチームが使用しない時間帯を有効活用します。</p>
+                    公式戦でA・Bチームが使用しない時間帯を有効活用します。(土曜日13-17時で体育館が確保出来ているのでAが公式戦のときはBが体育館を2時間使用。余った２時間で個サルを開催。有志で現役も参加)</p>
                 </div>
                 <div class="solution-item">
                     <h3>💴 参加費システム</h3>
-                    <p>OB一人あたり約1,000円の参加費を設定。<br>
-                    集まった参加費は全額、OB寄付金として現役の活動資金に充当します。</p>
+                    <p>OB一人あたり約1,000円の参加費を設定。（今後変更の可能性あり）<br>
+                    集まった参加費は基本全額、OB寄付金として現役の活動資金に充当します。</p>
                 </div>
                 <div class="solution-item">
                     <h3>🎯 期待される収益</h3>
-                    <p>年10回開催 × 1万円/回 = 年間約10万円<br>
+                    <p>年約10回開催 × 1万円/回 = 年間約10万円<br>
                     現役の部費補助として大きな支援となります。</p>
                 </div>
             </div>
@@ -464,7 +471,7 @@
                 </div>
             </div>
             <p style="text-align: center; color: #666; margin-top: 20px;">
-                定期的な交流が生み出す、持続可能な支援の仕組み
+                SNSやOBグループLINE、ブログなどで非同期で知る機会はあるが一緒にボールを蹴ることが一番部活に関心をもつきっかけになります。<br/>OBと現役の繋がりが増えることで自然とOBが現役の試合観戦や寄付で応援したくなるような仕組みが作ることを期待。
             </p>
         </div>
 
@@ -520,7 +527,7 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h4>STEP 4: 発展</h4>
-                        <p>イベントの多様化、他の交流企画との連携を推進</p>
+                        <p>イベントの多様化、他の交流企画との連携を推進<br>ワンデー大会出場、東京都４部フットサルリーグ等の公式戦出場も視野に入れてます</p>
                     </div>
                 </div>
             </div>
